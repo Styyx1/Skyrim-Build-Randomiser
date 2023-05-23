@@ -1,0 +1,3 @@
+﻿poor
+middle class
+rich

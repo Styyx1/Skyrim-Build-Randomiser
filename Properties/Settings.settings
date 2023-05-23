@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BuildGenerator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RandomNameOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="RandomRaceOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="RandomClassOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="RandomStoneOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="RandomTransformOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="RandomReligionOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="RandomSkillOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="RandomAreaOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not randomised yet</Value>
+    </Setting>
+    <Setting Name="ReligionEvil" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

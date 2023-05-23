@@ -1,0 +1,125 @@
+﻿<UserControl
+    x:Class="BuildGenerator.MVVM.View.HomeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:BuildGenerator.Core"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BuildGenerator.MVVM.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="clr-namespace:BuildGenerator.MVVM.ViewModel"
+    d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+    d:DesignHeight="460"
+    d:DesignWidth="800"
+    Background="Transparent"
+    mc:Ignorable="d">
+
+
+    <StackPanel>
+        <TextBlock
+            Margin="0,0,0,20"
+            HorizontalAlignment="Left"
+            FontSize="28"
+            Foreground="White"
+            Text="Main" />
+        <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+            <Border
+                Width="400"
+                Height="200"
+                CornerRadius="40">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Offset="0.0" Color="#C77414" />
+                        <GradientStop Offset="1" Color="#C77487" />
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry
+                        RadiusX="10"
+                        RadiusY="10"
+                        Rect="0,0,400,200" />
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock
+                            Margin="40,20,10,0"
+                            FontSize="40"
+                            Foreground="White"
+                            Text="Randomise" />
+                        <TextBlock
+                            x:Name="RandomiserLink"
+                            Margin="40,20,10,0"
+                            FontSize="30"
+                            Foreground="White"
+                            Text="Your next playthrough" />
+
+
+                    </StackPanel>
+
+                </Grid>
+
+            </Border>
+
+            <Border
+                Width="200"
+                Height="200"
+                Margin="40,0,0,0"
+                CornerRadius="40">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Offset="0.0" Color="#D256" />
+                        <GradientStop Offset="1" Color="#C77487" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="40"
+                    Foreground="White"
+                    Text="Backstory" />
+            </Border>
+
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock
+                Margin="0,0,0,10"
+                HorizontalAlignment="Left"
+                FontSize="24"
+                Foreground="White"
+                Text="Links" />
+            <StackPanel Margin="0,0,0,10" Orientation="Horizontal">
+                <Border
+                    Width="635"
+                    Height="150"
+                    CornerRadius="25">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Offset="0.0" Color="#844eff" />
+                            <GradientStop Offset="1" Color="#C77487" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock
+                                Margin="0,20,10,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="80"
+                                Foreground="White"
+                                Text="My other Stuff" />
+                        </StackPanel>
+
+
+                    </Grid>
+
+
+                </Border>
+
+
+            </StackPanel>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,10 @@
+﻿Argonian
+Breton
+Bosmer
+Dunmer
+Khajiit
+Altmer
+Nord
+Imperial
+Orsimer
+Redguard

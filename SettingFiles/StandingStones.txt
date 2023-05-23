@@ -1,0 +1,13 @@
+﻿Apprentice
+Atronach
+Lady
+Lord
+Lover
+Mage
+Ritual
+Serpent
+Shadow
+Steed
+Thief
+Tower
+Warrior

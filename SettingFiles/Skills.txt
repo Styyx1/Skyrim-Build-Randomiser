@@ -1,0 +1,18 @@
+﻿Destruction
+Conjuration
+Archery
+One-Handed
+Two-Handed
+Alteration
+Enchanting
+Illusion
+Restoration
+Block
+Heavy Armor
+Light Armor
+Smithing
+Alchemy
+Lockpicking
+Pickpocket
+Sneak
+Speech

@@ -1,0 +1,37 @@
+﻿<Application
+    x:Class="BuildGenerator.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:BuildGenerator"
+    xmlns:view="clr-namespace:BuildGenerator.MVVM.View"
+    xmlns:viewModel="clr-namespace:BuildGenerator.MVVM.ViewModel"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml" />
+                <ResourceDictionary Source="Theme/RandomiseButtonTheme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView />
+
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:RandomiseViewModel}">
+                <view:RandomiseView />
+
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:LinksViewModel}">
+                <view:LinkView />
+
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:BackstoryViewModel}">
+                <view:BackstoryView />
+
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
