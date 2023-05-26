@@ -3,3 +3,5 @@ bin/
 obj/
 packages/
 BuildGenerator_TemporaryKey.pfx
+packages.config
+BuildGenerator.csproj.user
