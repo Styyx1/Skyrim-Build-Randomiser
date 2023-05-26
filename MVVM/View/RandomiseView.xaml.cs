@@ -87,7 +87,7 @@ namespace BuildGenerator.MVVM.View
             string[] lines = File.ReadAllLines(stoneFile);
             Random rnd = new Random();
             string RNDStone = lines[rnd.Next(lines.Length)];
-            StoneOutput.Text = RNDStone + " Stone";
+            StoneOutput.Text = RNDStone;
             Properties.Settings.Default.RandomStoneOut = StoneOutput.Text;
             Properties.Settings.Default.Save();
         }

@@ -1,8 +1,8 @@
-﻿<UserControl    
+﻿<UserControl
     x:Class="BuildGenerator.MVVM.View.RandomiseView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:props="clr-namespace:BuildGenerator.Properties"
     xmlns:viewModel="clr-namespace:BuildGenerator.MVVM.ViewModel"
@@ -43,11 +43,9 @@
             </Button>
             <TextBox
                 x:Name="OutputName"
-                Width="320"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomNameOut}" />
 
             <Label
@@ -70,11 +68,9 @@
             </Button>
             <TextBox
                 x:Name="RaceOutput"
-                Width="315"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomRaceOut}" />
 
             <Label
@@ -97,11 +93,9 @@
             </Button>
             <TextBox
                 x:Name="ClassOutput"
-                Width="315"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomClassOut}" />
 
             <Label
@@ -124,11 +118,9 @@
             </Button>
             <TextBox
                 x:Name="StoneOutput"
-                Width="315"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomStoneOut}" />
             <Label
                 x:Name="TransformLabel"
@@ -151,11 +143,9 @@
             </Button>
             <TextBox
                 x:Name="TransformOutput"
-                Width="315"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomTransformOut}" />
 
         </StackPanel>
@@ -184,11 +174,9 @@
             <TextBox
                 x:Name="ReligionOutput"
                 Grid.Row="1"
-                Width="315"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomReligionOut}" />
             <CheckBox
                 x:Name="EvilCheckbox"
@@ -223,11 +211,9 @@
             <TextBox
                 x:Name="SkillsMajorOutput"
                 Grid.Row="1"
-                Width="315"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomSkillOut}" />
             <Label
                 x:Name="AreaLabel"
@@ -252,11 +238,9 @@
             <TextBox
                 x:Name="AreaOutput"
                 Grid.Row="1"
-                Width="315"
                 HorizontalAlignment="Left"
-                FontSize="18"
-                Foreground="White"
                 IsReadOnly="True"
+                Style="{StaticResource RandomiserTextBox}"
                 Text="{Binding Source={x:Static props:Settings.Default}, Path=RandomAreaOut}" />
             <Image
                 Name="RandomiseImage"

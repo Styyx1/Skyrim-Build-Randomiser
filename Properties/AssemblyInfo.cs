@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BuildGenerator")]
+[assembly: AssemblyTitle("Skyrim Build Randomiser")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP")]
-[assembly: AssemblyProduct("BuildGenerator")]
-[assembly: AssemblyCopyright("Copyright © HP 2023")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Skyrim Build Generator")]
+[assembly: AssemblyCopyright("Copyright © Styyx 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -53,3 +53,4 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("en-150")]

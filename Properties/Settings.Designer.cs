@@ -25,7 +25,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomNameOut {
             get {
                 return ((string)(this["RandomNameOut"]));
@@ -37,7 +37,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomRaceOut {
             get {
                 return ((string)(this["RandomRaceOut"]));
@@ -49,7 +49,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomClassOut {
             get {
                 return ((string)(this["RandomClassOut"]));
@@ -61,7 +61,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomStoneOut {
             get {
                 return ((string)(this["RandomStoneOut"]));
@@ -73,7 +73,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomTransformOut {
             get {
                 return ((string)(this["RandomTransformOut"]));
@@ -85,7 +85,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomReligionOut {
             get {
                 return ((string)(this["RandomReligionOut"]));
@@ -97,7 +97,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomSkillOut {
             get {
                 return ((string)(this["RandomSkillOut"]));
@@ -109,7 +109,7 @@ namespace BuildGenerator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not randomised yet")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string RandomAreaOut {
             get {
                 return ((string)(this["RandomAreaOut"]));

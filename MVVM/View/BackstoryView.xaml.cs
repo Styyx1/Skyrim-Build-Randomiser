@@ -47,10 +47,7 @@ namespace BuildGenerator.MVVM.View
             string skills = string.Empty;
             string appear = string.Empty;
             string religion = string.Empty;
-
-            var rmv = new RandomiseView();
-
-
+            string gameGoals = string.Empty;
 
             if (Properties.Settings.Default.RandomNameOut == string.Empty)
             {
@@ -182,9 +179,9 @@ namespace BuildGenerator.MVVM.View
             string RandomWealth()
             {
                 string WealthFile = @"SettingFiles\Wealth.txt";
-                string[] lines = File.ReadAllLines(WealthFile);
+                string[] lines = File.ReadAllLines(@WealthFile);
                 Random random = new Random();
-                string rndWealth = lines[random.Next(lines.Length)];
+                string rndWealth = lines[random.Next(0, lines.Length-1)];
                 return rndWealth;
             }
             string RandomNegativePersonality()
@@ -203,6 +200,15 @@ namespace BuildGenerator.MVVM.View
                 string rndPosPers = lines[rnd.Next(lines.Length)];
                 return rndPosPers;
             }
+
+            string RandomCharacterGoals()
+            {
+                string charGoals = @"SettingFiles\GameGoals.txt";
+                string[] lines = File.ReadAllLines(charGoals);
+                Random rng= new Random();
+                string rndGameGoals = lines[rng.Next(0, lines.Length-1)];
+                return rndGameGoals;
+            }
                     
             origin = RandomHailFrom();
             dream = RandomDreams();
@@ -211,19 +217,20 @@ namespace BuildGenerator.MVVM.View
             wealthnow = RandomWealth();
             negPers = RandomNegativePersonality();
             posPers = RandomPositivePersonality();
+            gameGoals = RandomCharacterGoals();
 
-            OutputBackstory.Text = "You are " + name +
-                    "\nYou are a " + age + race + " hailing from " + origin +
-                    "\nWhen you were younger you were raised by " + wealthyoung + " Parents." +
-                    "\nNow, after years of work you are " + wealthnow +
-                    "\nYour years of life have caused you to become " + negPers + " but" +
-                    "\nregardless of all the pains of life, you strive to be " + posPers + " in all your dealings." +
-                    "\nYour birthsign is the " + stone + " Stone " +
-                    "\nYou start out as a " + classes + " and you dream of " + dream + 
-                    "\nYou pray to " + religion +
-                    "\nYou are trained in " + skills;
+
+            OutputBackstory.Text =
+                "You are a " + age + race + " named " + name + " born under the " + stone + 
+                "\nYou hail from " + origin + " and travel through Skyrim for adventure" +
+                "\nwhile secretly dreaming of " + dream + ". Growing up " + wealthyoung + " formed your personality." +                
+                "\nPast experiences have caused you to become " + negPers + " but" +
+                "\nregardless of all the pains of life, you strive to be " + posPers + " in all your dealings." +
+                "\n\nDuring your journies through Skyrim you heard various rumors and " + 
+                "\nmade it your goal to " + gameGoals +
+                ".\nYears of training in " + skills + " prepared you for that moment." +
+                "\nHaving a strong faith in " + religion + " helps you keep your focus on your goals.";
         }
-
         private void ResetBackstoryButton_Click(object sender, RoutedEventArgs e)
         {
             var rv = new RandomiseView();

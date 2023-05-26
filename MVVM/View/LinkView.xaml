@@ -12,19 +12,20 @@
     <StackPanel>
         <Label
             Width="800"
-            Height="60"
+            Height="120"
+            Margin="-55,0,0,0"
             HorizontalAlignment="Center"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
             Content="Links to my stuff"
-            FontSize="30"
+            FontSize="60"
             Foreground="DarkOrange" />
         <StackPanel
             Width="800"
             Height="100"
             Orientation="Horizontal">
             <Border
-                Width="350"
+                Width="320"
                 Height="100"
                 CornerRadius="40">
                 <Border.Background>
@@ -34,12 +35,48 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
-                <Border.Clip>
-                    <RectangleGeometry
-                        RadiusX="10"
-                        RadiusY="10"
-                        Rect="0,0,400,200" />
-                </Border.Clip>
+                <TextBlock
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="40"
+                    Foreground="White">
+                    <Hyperlink
+                        Foreground="White"
+                        NavigateUri="https://github.com/Styyx1/Skyrim-Build-Randomiser"
+                        RequestNavigate="Hyperlink_RequestNavigate">
+                        Github
+                    </Hyperlink>
+
+                </TextBlock>
+
+
+            </Border>
+
+            <Border
+                Width="320"
+                Height="100"
+                Margin="20,0,0,0"
+                CornerRadius="40">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Offset="0.0" Color="#D256" />
+                        <GradientStop Offset="1" Color="#C77487" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock
+                    Margin="0,0,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="40"
+                    Foreground="White">
+                    <Hyperlink
+                        Foreground="White"
+                        NavigateUri="https://www.nexusmods.com/users/44337697?tab=files"
+                        RequestNavigate="Hyperlink_RequestNavigate">
+                        Nexus Mods
+                    </Hyperlink>
+                </TextBlock>
             </Border>
 
         </StackPanel>
