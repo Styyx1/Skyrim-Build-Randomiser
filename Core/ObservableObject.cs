@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Web;
 
+// tutorial used https://www.youtube.com/watch?v=PzP8mw7JUzI&t
+
 namespace BuildGenerator.Core
 {
     internal class ObservableObject : INotifyPropertyChanged

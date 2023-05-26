@@ -48,7 +48,7 @@ namespace BuildGenerator.MVVM.View
 
 
 
-        public void NameButton_Click(object sender, RoutedEventArgs e)
+        public void NameButton_Click(object sender, RoutedEventArgs e) // Names are taken from https://github.com/lanfear-lab/Character-Generators/blob/main/Names.txt with permission
         {
             
             string nameFile = @"SettingFiles\randomNames.txt";

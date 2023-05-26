@@ -1,10 +1,10 @@
-﻿brave Warrior
-poor Rogue
-elemental Mage
-talented Summoner
-shady Assassin
-noble Knight
-kind Monk
-proud Paladin
-sneaky Nightblade
+﻿Warrior
+Rogue
+Mage
+Summoner
+Assassin
+Knight
+Monk
+Paladin
+Nightblade
 Wretch(No Class)
